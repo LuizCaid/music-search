@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Inter-extra-light';
+    src: url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,200..900;1,14..32,100..900&display=swap');
+}
+
+@font-face {
+    font-family: 'Glamora';
+    src: url(fonts/GLAMORA.otf);
+}
+
+* {
+    font-family: 'Inter-extra-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
+body {
+    background-image: url(images/fundo‎.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+    margin-left: 6em;
+    margin-top: 4em;
+    gap: 0.5em;
+}
+
+.filtros {
+    background-color: black;
+    border: 0;
+    padding: 0.7em 11em 0.7em 0.5em;
+    border-radius: 1em;
+    box-shadow: #007AFF;
+    filter: drop-shadow(0px 0px 7px #007bff36);
+    text-align: left;
+    width: 200px;
+}
+
+
+#pesquisa {
+    position: relative;
+    background-image: linear-gradient(45deg,
+            black,
+            rgb(30, 30, 30));
+    padding: 1.4em 11.5em;
+    border-radius: 5em;
+    border: 0;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+#pesquisa:hover {
+    background-image: linear-gradient(45deg,
+            black,
+            rgb(36, 36, 36));
+    filter: drop-shadow(0px 0px 7px #007bff44);
+    transition: ease-in-out 0.2s;
+}
+
+#titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-family: 'Glamora', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#credits {
+    position: absolute;
+    text-align: center;
+    margin: 43em 9em;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultado {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-left: 55em;
+    margin-top: -35em;
+}
+
+.cards {
+    background: rgb(25, 25, 25);
+    background: radial-gradient(circle, rgba(25, 25, 25, 1) 21%, rgba(0, 0, 0, 1) 100%);
+    height: 560px;
+    width: 362px;
+    border-radius: 23px;
+}
+
+.texts {
+    position: relative;
+    margin: 330px 30px;
+}
+
+.texts h1 {
+    font-size: 40px;
+    font-weight: 700;
+    background-image: linear-gradient(90deg, #ffffff, #27356c);
+    color: transparent;
+    background-clip: text;
+}
+
+.texts p {
+    font-size: 20px;
+   
+}
+
+.medias {
+    text-align: center;
+    position: relative;
+    margin: -18em 0em;
+
+}
+
+.info {
+    margin-top: -10px;
+}
+
+.info p {
+    margin-top: -30px;
+}
+
+#musga {
+    display: none;
+}
+
+#wave-menu {
+    border-radius: 50px;
+    width: 100px;
+    height: 45px;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    transition: ease 0.2s;
+    position: relative;
+    margin: -80px 220px;
+    background: #ffffff00;
+}
+
+#wave-menu li {
+    list-style: none;
+    height: 30px;
+    width: 4px;
+    border-radius: 10px;
+    background-image: linear-gradient(150deg, #ffffff, #27356c);
+    margin: 0 6px;
+    padding: 0;
+    animation-name: wave1;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease 0.2s;
+}
+
+#wave-menu li:nth-child(2) {
+    animation-name: wave2;
+    animation-delay: 0.2s;
+}
+
+#wave-menu li:nth-child(3) {
+    animation-name: wave3;
+    animation-delay: 0.23s;
+    animation-duration: 0.4s;
+}
+
+
+@keyframes wave1 {
+    from {
+        transform: scaleY(1);
+    }
+
+    to {
+        transform: scaleY(0.5);
+    }
+}
+
+@keyframes wave2 {
+    from {
+        transform: scaleY(0.3);
+    }
+
+    to {
+        transform: scaleY(0.6);
+    }
+}
+
+@keyframes wave3 {
+    from {
+        transform: scaleY(0.6);
+    }
+
+    to {
+        transform: scaleY(0.8);
+    }
+}
+
+@keyframes wave4 {
+    from {
+        transform: scaleY(0.2);
+    }
+
+    to {
+        transform: scaleY(0.5);
+    }
+}
+
+
+
+@media only screen and (min-width: 360px) {
+    .resultado{
+        margin-left: 0em;
+        margin-top: 10em;
+    }
+}
+
+
+
+@media only screen and (min-width: 900px) {
+    body{
+        background-size: cover;
+        height: 43em;
+    }
+
+    .resultado{
+        margin-left: 35em;
+        margin-top: -35em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body{
+        background-size: cover;
+    }
+
+    .resultado{
+        margin-left: 55em;
+        margin-top: -35em;
+    }
+}

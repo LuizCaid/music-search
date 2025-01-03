@@ -1,0 +1,14 @@
+.anima{
+    overflow: hidden;
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(25%);
+    transition: ease-in-out 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+    transition: ease-in-out 1s;
+}
